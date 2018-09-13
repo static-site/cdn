@@ -6,430 +6,430 @@ body,p,blockquote,
 h1,h4,h5,
 dl,dd
 {
-	margin: 0;
+    margin: 0;
 }
 
 ol,ul
 {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 main,data
 {
-	display: block;
+    display: block;
 }
 
 a,s {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 i,em {
-	font-style: normal;
+    font-style: normal;
 }
 
 li {
-	list-style: none;
+    list-style: none;
 }
 
 /*----- common -------*/
 header,main, footer
 {
-	margin: 0 auto;
-	max-width: 768px;
+    margin: 0 auto;
+    max-width: 768px;
 }
 
 body {
-	background: #ccc;
+    background: #ccc;
 }
 
 noscript {
-	overflow: hidden;
-	text-align: center;
-	color: #fff;	
-	line-height: 22px;
-	font-size: 16px;
-	font-weight: bold;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;    
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 noscript div
 {
-	padding: 4px 0;
-	background: #000;
-	border-bottom: 1px #ccc solid;
+    padding: 4px 0;
+    background: #000;
+    border-bottom: 1px #ccc solid;
 }
 
 noscript p {
-	
+    
 }
 
 header {
-	background: #F8F8F8;
+    background: #F8F8F8;
 }
 
 /*------- tip ---------*/
 header.tip {
-	background: #fff;
-	border-bottom: 1px #ccc solid;
+    background: #fff;
+    border-bottom: 1px #ccc solid;
 }
 
-header.tip h5 {	
-	line-height: 22px;
-	font-size: 15px;
-	font-weight: bold;	
-	text-align: center;
+header.tip h5 {    
+    line-height: 22px;
+    font-size: 15px;
+    font-weight: bold;    
+    text-align: center;
     background: #000;
     color: #fff;
     padding: 10px;
-	border-bottom: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
 }
 
 header.tip a {
-	color: #aaaaff;
-	text-decoration: underline;
+    color: #aaaaff;
+    text-decoration: underline;
 }
 
 header.tip div {
-	padding: 10px;
+    padding: 10px;
 }
 
 /*----- filter -------*/
 .filter {
-	position: fixed;
-	z-index: 69;
-	display: none;
-	height: 100%;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 69;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .filter aside {
-	
-	height: 100%;
-	/*float: left;background: #000;width: 80px;*/
-	
+    
+    height: 100%;
+    /*float: left;background: #000;width: 80px;*/
+    
 }
 
 .filter div {
-	font-size: 15px;
-	line-height: 25px;
-	height: 100%;
-	overflow: auto;
-	/*margin: 0 0 0 80px;
-	width: 100%;*/
-	background: #fff;
-	max-width: 240px;
+    font-size: 15px;
+    line-height: 25px;
+    height: 100%;
+    overflow: auto;
+    /*margin: 0 0 0 80px;
+    width: 100%;*/
+    background: #fff;
+    max-width: 240px;
     float: right;
     width: 100%;
 }
 
 .filter ol {
-	overflow: hidden;
-	padding: 0 0 44px 0;
+    overflow: hidden;
+    padding: 0 0 44px 0;
 }
 
 .filter dl {
-	padding: 0 10px 10px 10px;
-	border-bottom: 1px solid #ccc;
+    padding: 0 10px 10px 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .filter li {
-	display: none;
+    display: none;
 }
 
 .filter dt {
-	color: #888;
-	font-size: 14px;
-	line-height: 32px;
+    color: #888;
+    font-size: 14px;
+    line-height: 32px;
 }
 
 .filter dd {
-	padding: 0 0 0 20px;
+    padding: 0 0 0 20px;
 }
 
 .filter input {
-	width: 70px;
+    width: 70px;
 }
 
 .datetime input {
-	width: 150px;
-	display: block;
+    width: 150px;
+    display: block;
 }
 
 .filter blockquote {
-	position: fixed;
-	z-index: 220;
-    bottom: 0;		
-	width: 100%;
+    position: fixed;
+    z-index: 220;
+    bottom: 0;        
+    width: 100%;
 }
 
 .filter span {
-	display: block;
-	/*margin: 0 0 0 80px;*/
-	background: #fff;
-	max-width: 240px;
+    display: block;
+    /*margin: 0 0 0 80px;*/
+    background: #fff;
+    max-width: 240px;
     float: right;
     width: 100%;
 }
 
 .filter button {
-	float: left;
-	display: block;
-	box-sizing: content-box;
-	width: 50%;
-	padding: 0;
-	height: 40px;
-	line-height: 40px;
-	font-size: 16px;
-	color: #fff;
+    float: left;
+    display: block;
+    box-sizing: content-box;
+    width: 50%;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
     background: #FF5106;/**/
     border: none;
-	outline: none;
+    outline: none;
 }
 
 .filter button[type=reset] {
-	background: #FFC000;
+    background: #FFC000;
 }
 
 /*----- search ------*/
 form.search {
-	overflow: hidden;
-	padding: 10px 8px 4px 0;
+    overflow: hidden;
+    padding: 10px 8px 4px 0;
 }
 
 .search h1 {
-	float: left;
-	line-height: 30px;
-	font-size: 20px;
-	padding: 0 8px 0 8px;
-	font-weight: normal;
+    float: left;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 0 8px 0 8px;
+    font-weight: normal;
     font-family: "Microsoft YaHei";
 }
 
 .search h1 a {
-	color: #f00;
+    color: #f00;
 }
 
 form.search div {
-	overflow: hidden;
-	
+    overflow: hidden;
+    
 }
 
 form.search div span {
-	overflow: hidden;
-	display: block;
-	border: 1px solid #ccc;
-	border-right: none;
-	border-radius: 14px 0px 0px 14px;
-	padding: 0 0 0 14px;
-	background: #ECECEC;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 14px 0px 0px 14px;
+    padding: 0 0 0 14px;
+    background: #ECECEC;
 }
 
 .search input {
-	float: left;
-	display: block;
-	width: 100%;
-	height: 28px;
-	line-height: 28px;
-	font-size: 15px;
-	border: none;
-	outline: none;
-	padding: 0;
-	background: #ECECEC;
-	color: #444;
+    float: left;
+    display: block;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 0;
+    background: #ECECEC;
+    color: #444;
 }
 
 
 form.search blockquote {
-	float: right;
-	width: 40px;
-	height: 30px;
+    float: right;
+    width: 40px;
+    height: 30px;
 }
 
 .search button {
-	float: left;
-	display: block;
-	box-sizing: content-box;
-	width: 38px;
-	padding: 0;
-	height: 28px;
-	line-height: 28px;
-	font-size: 18px;
-	color: #fff;
+    float: left;
+    display: block;
+    box-sizing: content-box;
+    width: 38px;
+    padding: 0;
+    height: 28px;
+    line-height: 28px;
+    font-size: 18px;
+    color: #fff;
     background: #e62e04;/**/
     border: solid 1px #e62e04;
     border-radius: 0px 14px 14px 0px;
     background-image: url(img/search.png);
-	background-position: left center;
-	background-repeat: no-repeat;
-	
+    background-position: left center;
+    background-repeat: no-repeat;
+    
 }
 
 /*----- category --------*/
 
 nav {
-	overflow: hidden;
-	overflow-x: auto;
-	line-height: 34px;
-	font-size: 15px;
+    overflow: hidden;
+    overflow-x: auto;
+    line-height: 34px;
+    font-size: 15px;
 }
 
 nav ol {
-	display: flex;
-	white-space: nowrap;
+    display: flex;
+    white-space: nowrap;
 }
 
 header nav li {
-	padding: 0 5px;	
-	display: block;
-	float: left;
+    padding: 0 5px;    
+    display: block;
+    float: left;
 }
 
 header nav li a
 {
-	color: #000;
-	display: block;
-	padding: 0 10px;
+    color: #000;
+    display: block;
+    padding: 0 10px;
 }
 
 
 header nav li.cat,
 header nav li.cat a
 {
-	color: #FF5000;
+    color: #FF5000;
 }
 
 header nav li.cat a {
-	border-bottom: 2px solid #FF5000;
+    border-bottom: 2px solid #FF5000;
 }
 
 /*------- tool --------*/
 .tool {
- 	line-height: 14px;
- 	font-size: 14px;
- 	padding: 10px 0;
- 	border-bottom: 1px solid #ddd;
- 	background: #fff;
+     line-height: 14px;
+     font-size: 14px;
+     padding: 10px 0;
+     border-bottom: 1px solid #ddd;
+     background: #fff;
 }
 
 .tool blockquote {
-	float: right;
-	padding: 0 20px;
-	border-left: 1px solid #ccc;
+    float: right;
+    padding: 0 20px;
+    border-left: 1px solid #ccc;
 }
 
 .tool span {
-	overflow: hidden;
-	display: block;
+    overflow: hidden;
+    display: block;
 }
 
-.tool li {	
-	float: left;
-	padding: 0 20px;
+.tool li {    
+    float: left;
+    padding: 0 20px;
 }
 
 .tool li:first-child a {
-	padding: 0 10px 0 0;
-	background-image: url(img/arr_grey.png);
-	background-position: right center;
-	background-repeat: no-repeat;
-	background-size: 8px;
+    padding: 0 10px 0 0;
+    background-image: url(img/arr_grey.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 8px;
 }
 
 .tool a {
-	color: #666;
+    color: #666;
 }
 
 a.cur 
 {
-	color: #FF5000;
+    color: #FF5000;
 }
 
 .tool li:first-child a.cur {
-	background-image: url(img/arr.png);
+    background-image: url(img/arr.png);
 }
 
 /*------- order --------*/
 .order {
-	position: absolute;
-	display: none;
-	z-index: 15;
-	width: 100%;
-	max-width: 768px;
-	line-height: 34px;
-	font-size: 14px;	
-	background: #fff;
+    position: absolute;
+    display: none;
+    z-index: 15;
+    width: 100%;
+    max-width: 768px;
+    line-height: 34px;
+    font-size: 14px;    
+    background: #fff;
 }
 
 .order ol {
-	padding: 0 0 0 14px;
+    padding: 0 0 0 14px;
 }
 
 .order li {
-	border-bottom: 1px solid #E7E7E7;
-	padding: 0 0 0 6px;
+    border-bottom: 1px solid #E7E7E7;
+    padding: 0 0 0 6px;
 }
 
 .order li:last-child {
-	border-bottom: none;
+    border-bottom: none;
 }
 
 
 .order a {
-	display: block;
-	color: #666;
+    display: block;
+    color: #666;
 }
 
 .sel,
 .sel a
 {
-	color: #FF5000;
+    color: #FF5000;
 }
 
 .order sup {
-	float: right;
-	display: block;
-	padding: 0 20px 0 0;
+    float: right;
+    display: block;
+    padding: 0 20px 0 0;
 }
 
 /*------- glass ---------*/
 .glass {
-	position: absolute;
-	z-index: 7;
-	display: none;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 7;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .goto {
-	position: fixed;
-	z-index: 6;
-	display: none;
-	right: 10px;
-	bottom: 10px;
-	width: 36px;
-	height: 36px;
-	background-image: url(img/gotop.png);
-	background-repeat: no-repeat;
-	background-size: 39px 39px;
-	background-position:  center center;
-	border-radius: 18px;
-	border: 1px solid #D6D6D6;
+    position: fixed;
+    z-index: 6;
+    display: none;
+    right: 10px;
+    bottom: 10px;
+    width: 36px;
+    height: 36px;
+    background-image: url(img/gotop.png);
+    background-repeat: no-repeat;
+    background-size: 39px 39px;
+    background-position:  center center;
+    border-radius: 18px;
+    border: 1px solid #D6D6D6;
 }
 
 
 /*------ list --------*/
 main {
-	overflow: hidden;;
-	background: #F4F4F4;
+    overflow: hidden;;
+    background: #F4F4F4;
 }
 
 ul {
-	padding: 4px 0;
-	overflow: hidden;
-	width: 50%;
-	float: left;
+    padding: 4px 0;
+    overflow: hidden;
+    width: 50%;
+    float: left;
 }
 
 ul.right {
@@ -437,14 +437,14 @@ ul.right {
 }
 
 main  dl {
-	float: left;
-	width: 100%;
+    float: left;
+    width: 100%;
 }
 
-main  dl a {	
-	display: block;
-	margin: 4px 4px 4px 0;
-	background: #fff;
+main  dl a {    
+    display: block;
+    margin: 4px 4px 4px 0;
+    background: #fff;
 }
 
 ul.right dl a {
@@ -454,60 +454,83 @@ ul.right dl a {
 
 /*dl:nth-child(even) a*/
 ul.right dl a {
-	margin: 4px 0 4px 4px;
+    margin: 4px 0 4px 4px;
+}
+
+main dl menu {
+    position: relative;    
+    margin: 0 0 -26px 0;
+    padding: 0 8px;
+    border: 1px dotted #ff0060;
+    width: auto;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    
+    display: block;
+    float: right;
+    text-align: center;
+    color: #ff0060;
+    background: #fff7fa;
+}
+
+main dl.tuan menu {
+    border: 1px dotted #FF0B04;
+    color: #FF0B04;
+    background: #FEEA7E;
 }
 
 img {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 }
 
 main  dl span {
-	overflow: hidden;
-	display: block;
-	padding: 10px 4px 10px 6px;
+    overflow: hidden;
+    display: block;
+    padding: 10px 4px 10px 6px;
 }
 
 em {
-	border: 1px solid #f00;
-	border-radius: 2px;
-	color: #f00;
-	display: block;
-	float: left;
-	width: 16px;
-	font-size: 14px;
-	line-height: 16px;
-	margin: 0 4px 0 0;
-	text-align: center;
+    border: 1px solid #f00;
+    border-radius: 2px;
+    color: #f00;
+    display: block;
+    float: left;
+    width: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 4px 0 0;
+    text-align: center;
 }
 
 h4 {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	font-weight: normal;	
-	font-size: 15px;
-	line-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: normal;    
+    font-size: 15px;
+    line-height: 18px;
 }
 
 data {
-	overflow: hidden;
-	padding: 0 5px 10px 5px;
-	display: block;
-	line-height: 16px;
+    overflow: hidden;
+    padding: 0 5px 10px 5px;
+    display: block;
+    line-height: 16px;
 }
 
 data p {
-	float: left;
-	color: #f00;
-	font-size: 16px;
+    float: left;
+    color: #f00;
+    font-size: 16px;
 }
 
 s {
 
-	float: right;
-	color: #aaa;
-	font-size: 13px;
+    float: right;
+    color: #aaa;
+    font-size: 13px;
 }
 
 
@@ -515,9 +538,9 @@ s {
 /*------ loadding ------*/
 footer {
 
-	background: #eee;
-	text-align: center;
-	font-size: 14px;
-	line-height: 44px;
-	height: 44px;
+    background: #eee;
+    text-align: center;
+    font-size: 14px;
+    line-height: 44px;
+    height: 44px;
 }
