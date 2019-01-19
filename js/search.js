@@ -53,6 +53,9 @@ function change() {
  * @return {[type]} [description]
  */
 function update() {
+	if (!end) {
+		return;
+	}
 	var d = new Date();
 	var t = d.getTime();
 	
