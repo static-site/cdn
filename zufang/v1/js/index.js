@@ -373,13 +373,13 @@ function scroll() {
  * onsubmit - 搜索
  */
 function search() {
+	_.form.removeNull(search_form)
 	//if ( server.category_id ) {
 		hash = '#cat_' + server.category_id
 		if (hash != location.hash) {
 			search_form.action = hash
 		}
 	//}
-	_.form.removeNull(search_form) 
 	return true
 }
 
@@ -408,7 +408,7 @@ function filterSubmit( id ) {
 	}
 	
 	// 范围
-	key = ['price', 'save', 'sale', 'start', 'end']
+	key = ['price', 'sqm']
 	le = key.length
 	j = 0
 	for (; j < le; j++) {
