@@ -21,7 +21,7 @@ config = {
 	cdn_host: 'https://urlnk.host/'
 }
 
-window.onscroll = scroll
+//* window.onscroll = scroll
 
 /*---- polyfill ------*/
 
@@ -222,8 +222,8 @@ function api_item_list(arg) {
 /**
  * API - 生成子分类列表
  */
-function api_category_subclass(arg) {
-	json = RESP['category_subclass']
+function api_area(arg) {
+	json = RESP['area']
 	// console.log(json)
 	data = json.data
 	list = data.list
@@ -232,13 +232,13 @@ function api_category_subclass(arg) {
 	obj = {}
 	for (; i < len; i++) {
 		row = list[i]
-		obj[row.category_id] = row.title
+		obj[row.area_id] = row.title
 		
 	}
-	DATA.category[data.cid] = obj
+	DATA.category[data.area_id] = obj
 	// console.log(DATA)
 	
-	selectSubclass(data.cid)
+	selectSubclass(data.area_id, '区域')
 }
 
 
@@ -330,10 +330,12 @@ function goTop(step) {
 /**
  * DOM - 生成子分类列表
  */
-function selectSubclass(cid) {
+function selectSubclass(cid, title) {
+	title = title || '子类'
+
 	global.el_flt_select[1].innerHTML = ''
 	if (cid) {
-		global.el_flt_select[1].innerHTML = '<option value="">子类</option>'
+		global.el_flt_select[1].innerHTML = '<option value="">' + title + '</option>'
 		global.el_flt_select[1].removeAttribute('disabled')
 	} else {
 		global.el_flt_select[1].setAttribute('disabled', 'disabled')
@@ -373,7 +375,7 @@ function scroll() {
  * onsubmit - 搜索
  */
 function search() {
-	_.form.removeNull(search_form)
+	// _.form.removeNull(search_form)
 	//if ( server.category_id ) {
 		hash = '#cat_' + server.category_id
 		if (hash != location.hash) {
@@ -386,7 +388,7 @@ function search() {
 /**
  * onsubmit - 过滤
  */
-function filterSubmit( id ) {
+function filterSubmit( id, cat, sub ) {
 	// 单选列表
 	select = panel_filter.getElementsByTagName('select')
 	len = select.length
@@ -394,16 +396,18 @@ function filterSubmit( id ) {
 	for (; i < len; i++) {
 		row = select[i]
 		nm = row.name
-		// console.log(row)
-		if ('subclass' == nm && row.value) {
-			nm = 'category'
-		} else if('category' == nm) {
-			server.category_id = row.value
+		val = row.value
+
+		if ('subarea' == nm && row.value) {
+			nm = 'area'
+		} else if('area' == nm) {
+			server.category_id = val
 		}
+
 		el = document.getElementsByName(nm)
 		// console.log(el)
 		if (1 < el.length) {
-			el[1].value = row.value
+			el[1].value = val
 		}
 	}
 	
@@ -419,15 +423,12 @@ function filterSubmit( id ) {
 		max = price[1].value
 
 		val = (min || max) ? min + '_' + max : ''
-		console.log([min, max, val])
+		// console.log([min, max, val])
 		document.getElementsByName(nm)[0].value = val
 	}
 
 	search()
-	// return true
-	//if (id) {
-		search_form.submit()// 
-	//}
+	search_form.submit() // 
 	return false
 }
 
@@ -440,12 +441,13 @@ function selectCategory(e) {
 	row = DATA.category[key]
 	if ('undefined' == typeof row) {
 		formData = {
-			'cid': key
+			'area_id': key,
+			'do': 'subarea'
 		}
-		_.api( 'category/subclass', formData )
+		_.api( 'area', formData )
 	} else {
 		// console.log([row, ])
-		selectSubclass(key)
+		selectSubclass(key, '区域')
 	}
 }
 
