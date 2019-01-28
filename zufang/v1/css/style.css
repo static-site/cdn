@@ -215,6 +215,31 @@ form.search {
     color: #f00;
 }
 
+.search cite {
+    float: right;
+    display: block;
+    font-style: normal;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 0 0 8px;
+}
+
+.search cite a {
+    color: #999;
+    display: block;
+}
+
+.search cite a:after {
+    float: right;
+    display: block;
+    content: '';
+    margin: 12px 0 0 6px;
+    width: 9px;
+    height: 5px;
+    background: url(../img/header_icons1.png) -96px -32px no-repeat;
+    background-size: 128px auto;
+}
+
 form.search div {
     overflow: hidden;
     
