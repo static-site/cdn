@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" 
+    xmlns:moz="http://www.mozilla.org/2006/browser/search/"
+    xmlns:referrer="http://a9.com/-/opensearch/extensions/referrer/1.0/"
+    xmlns:ie="http://schemas.microsoft.com/Search/2008/">
+  <ShortName>红券网</ShortName>
+  <Description>搜索淘宝、天猫优惠券</Description>
+  <Tags>shopping coupon taobao tmall</Tags>
+  <Contact>contact@urlnk.com</Contact>
+  <Url template="https://cpn.red/?q={searchTerms}&amp;client=firefox&amp;src={referrer:source}"
+       type="text/html" />
+  <Url template="https://cpn.red/suggestions?q={searchTerms}&amp;client=firefox&amp;src={referrer:source}"
+       type="application/x-suggestions+json" />
+  <Url template="https://cpn.red/opensearch?rel=self"
+       type="application/opensearchdescription+xml"
+       rel="self" />
+  <moz:SearchForm>https://cpn.red</moz:SearchForm>
+  <Image height="16" width="16" type="image/x-icon">https://cpn.red/favicon.ico</Image>
+  <InputEncoding>utf-8</InputEncoding>
+</OpenSearchDescription>
