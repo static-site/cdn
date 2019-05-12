@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>微信红包管理</title>
+<!--link href="css/style.css?v=20180309" rel="stylesheet" type="text/css"-->
+</head>
+
+<body>
+<main id="main" class="main">
+	<div data-nm="dashboard">
+	</div>
+</main>
+
+<header>
+	<div class="header-logo">微信红包管理</div>
+	<div class="header-top">
+		<div class="aside-toggle">
+			<a href="javascript:" onclick="toggle(this)" data-expand="[<]" data-collapse="[>]" data-target="aside">[=]</a>
+		</div> 
+		<div class="top-menu"><a href="/" target="home">前台首页</a></div>
+	</div>
+	<div class="header-user">
+		<a href="javascript:"><img src="//urlnk.host/img/avatar/avatar.jpg"><u>用户名</u></a>
+		<a href="javascript:">退出</a>
+		<a href="javascript:" onclick="toggle(this)" data-expand="[>]" data-collapse="[<]" data-target="footer">[=]</a>
+	</div>
+</header>
+
+<aside id="aside" data-expand="main.style.marginLeft='200px'; nav.style.left='200px';" data-collapse="main.style.marginLeft=0; nav.style.left=0;">
+	<div>
+		<dl name="menu" class="expand">
+			<dt onclick="details(this)" data-expand="v" data-collapse="&lt;" data-target="@menu(0)">
+				<i class="summary">v</i>
+				<a href="javascript:">订单管理</a>
+			</dt>
+			<dd class="details">
+				<li><a href="javascript:" onclick="tab_open('apply_list', this, '', '{&quot;id&quot;:&#34;hello&#34;}')">全部订单</a></li>
+				<li><a href="javascript:" onclick="tab_open('apply_list_unaudited', this, 'apply_list', '{&quot;query&quot;:&#34;status=<1&#34;}')">未审核订单</a></li>
+				<li><a href="javascript:" onclick="tab_open('apply_list_audited', this, 'apply_list', '{&quot;query&quot;:&#34;status=1,2&#34;}')">已审核订单</a></li>
+				<li><a href="javascript:" onclick="tab_open('apply_list_paid', this, 'apply_list', '{&quot;query&quot;:&#34;status=3&#34;}')">已支付订单</a></li>
+			</dd>
+		</dl>
+		<dl name="menu" class="expand">
+			<dt onclick="details(this)" data-expand="v" data-collapse="&lt;" data-target="@menu(1)">
+				<i class="summary">v</i>
+				<a href="javascript:">支付管理</a>
+			</dt>
+			<dd class="details">
+				<li><a href="javascript:" onclick="tab_open('pay_list', this)">全部支付</a></li>
+				<li><a href="javascript:" onclick="tab_open('pay_list_comment', this, 'pay_list', '{&quot;query&quot;:&#34;status=&#60;1&#38;type=2&#34;}')">未支付好评</a></li>
+				<li><a href="javascript:" onclick="tab_open('pay_list_order', this, 'pay_list', '{&quot;query&quot;:&#34;status=&#60;1&#38;type=1&#34;}')">未支付刷单</a></li>
+				<li><a href="javascript:" onclick="tab_open('pay_list_success', this, 'pay_list', '{&quot;query&quot;:&#34;status=1&#34;}')">支付成功</a></li>
+				<li><a href="javascript:" onclick="tab_open('pay_list_fail', this, 'pay_list', '{&quot;query&quot;:&#34;status=2&#34;}')">支付失败</a></li>
+			</dd>
+		</dl>
+		<dl name="menu" class="expand">
+			<dt onclick="details(this)" data-expand="v" data-collapse="&lt;" data-target="@menu(2)">
+				<i class="summary">v</i>
+				<a href="javascript:">客户管理</a>
+			</dt>
+			<dd class="details">
+				<li><a href="javascript:" onclick="tab_open('weixin_list', this)">微信会员</a></li>
+				<li><a href="javascript:" onclick="tab_open('taobao_list', this)">淘宝会员</a></li>
+			</dd>
+		</dl>
+		<dl name="menu" class="expand">
+			<dt onclick="details(this)" data-expand="v" data-collapse="&lt;" data-target="@menu(3)">
+				<i class="summary">v</i>
+				<a href="javascript:">系统管理</a>
+			</dt>
+			<dd class="details">
+				<li><a href="javascript:" onclick="tab_open('user_list', this)">用户列表</a></li>
+				<li>角色</li>
+				<li>权限</li>
+				<li>日志</li>
+			</dd>
+		</dl>
+	</div>
+</aside>
+
+<nav id="nav">
+	<div class="nav-tool">
+		<div class="tab-roll" style="display: none">
+			<a href="javascript:" onclick="tab_roll()">&lt;</a>
+			<a href="javascript:" onclick="tab_roll('-')">&gt;</a>
+		</div>
+		<div class="tab-option" style="display: none">
+			<a href="javascript:" onclick="tab_reset()">x</a>
+		</div>
+	</div>
+	<div class="nav-tab">
+		<div style="width: 2400px; overflow: hidden;">
+			<ol>
+				<li class="tab-current" data-nm="dashboard">
+					<a href="javascript:" onclick="tab_switch(this)" style="padding-right: 10px">后台首页</a>
+				</li>
+			</ol>
+		</div>
+	</div>
+</nav>
+
+<dialog class="dialog" style="display:none">
+</dialog>
+
+<footer style="display:none" id="footer" data-expand="" data-collapse="">
+	<article>
+		<section>
+			<img id="preview_image" src="img/px.png" style="width: 100%;">
+		</section>
+		<section>
+		</section>
+	</article>
+</footer>
+
+<!--script src="js/script.js?v=2018030917"></script-->
+<script src="js/var.js?v=201803152051"></script>
+<script>
+_.css.append('css/newui.css');
+
+_.js.src(
+	'js/script.js', 
+	function () { 
+		tpl_init('dashboard'); 
+	}
+);
+</script>
+</body>
+</html>

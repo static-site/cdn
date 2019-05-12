@@ -1,0 +1,454 @@
+/**
+ * 重置
+ */
+html, body {
+	/*height: 100%;*/
+}
+
+body, h1, h4, ol, dl, dd {
+	margin: 0;
+}
+
+ol {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/**
+ * 布局
+ */
+header, .header {
+	display: block;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	height: 44px;
+	width: 100%;
+	background: rgba(255,255,255,0.75);
+	border-bottom: 1px solid #ccc;
+}
+
+aside, .aside {
+	display: block;
+	float: left;
+	overflow: hidden;
+	overflow-y: auto;
+	position: fixed;
+	top: 45px;
+	bottom: 0;
+	/*height: 100%;*/
+	width: 199px;
+	background: rgba(255,255,255,0.95);
+	border-right: 1px solid #ccc;
+	
+}
+
+nav, .nav {
+	display: block;
+	position: fixed;
+	top: 45px;
+	right: 0;
+	left: 200px;
+	height: 36px;
+	background: rgba(221,221,221,0.85);
+	border-bottom: 1px solid #ccc;
+}
+
+main, .main {
+	display: block;
+	margin: 82px 0 30px 200px;
+}
+
+
+/**
+ * 侧拦
+ */
+aside div, .aside div {
+	/*height: 1000px;*/
+}
+
+aside dt, .aside dt {
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+aside dd, .aside dd {
+	display: block;
+	border-bottom: 1px solid #ccc;
+}
+
+aside dt a, .aside dt a {
+	display: block;
+	/*float: left;*/
+	padding-left: 10px;
+}
+
+aside dt i, .aside dt i {
+	display: block;
+	float: right;
+	padding: 0 10px;
+	font-style: normal;
+}
+
+aside li, .aside li {
+	display: block;
+	padding-left: 10px;
+	height: 32px;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+	line-height: 32px;
+}
+
+aside li:last-child, .aside li:last-child {
+	border-bottom: none;
+}
+
+aside li a, .aside li a {
+	display: block;
+	padding-left: 10px;
+}
+
+
+/**
+ * 顶部
+ */
+.header-logo {
+	overflow: hidden;
+	float: left;
+	text-align: center;
+	height: 100%;
+	width: 200px;
+	font-size: 18px;
+	line-height: 44px;
+	font-weight: bold;
+}
+
+.header-top {
+	overflow: hidden;
+	float: left;
+	height: 100%;
+}
+
+.header-user {
+	overflow: hidden;
+	float: right;
+	padding: 5px 5px 0 0;
+	height: 100%;
+}
+
+
+/* 顶部细化 */
+.header-top div {
+	overflow: hidden;
+	float: left;
+}
+
+.header-user a {
+	display: block;
+	float: left;
+	margin: 0 5px;
+	padding: 0 10px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+}
+
+.header-user img {
+	display: block;
+	float: left;
+	margin-left: -10px;
+}
+
+.header-user u {
+	display: block;
+	float: left;
+	padding-left: 10px;
+}
+
+
+/**
+ * 标签栏
+ */
+.nav-tab {
+	overflow: hidden;
+	margin: 0 72px 0 0;
+}
+
+.nav-tool {
+	float: right;
+	height: 100%;
+}
+
+
+/* 标签 */
+.nav-tab ol {
+	display: block;
+	float: left;
+	padding: 0;
+	position: relative;
+	left: 0px;
+}
+
+.nav-tab li {
+	float: left;
+	padding: 0 1px;
+	height: 36px;
+}
+
+li.tab-current {
+	padding: 0;
+	background: rgba(255,255,255,1);
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid rgba(255,255,255,1);
+	border-left: 1px solid #ccc;
+}
+
+.nav-tab a {
+	display: inline-block;
+	padding: 0 0 0 10px;
+	line-height: 36px;
+	font-size: 14px;
+}
+
+.nav-tab i {
+	display: block;
+	float: right;
+	padding: 0 10px;
+	line-height: 36px;
+	font-size: 14px;
+	font-style: normal;
+}
+
+
+/* 标签栏工具 */
+.nav-tool div {
+	float: left;
+	text-align: center;
+}
+
+.nav-tool a {
+	display: block;
+	float: left;
+	line-height: 36px;
+	font-size: 14px;
+}
+
+.tab-roll a {
+	width: 20px;
+}
+
+.tab-option a {
+	width: 32px;
+}
+
+
+/**
+ * 顶部
+ */
+.aside-toggle {
+	padding: 0 10px;
+	line-height: 45px;
+	font-size: 14px;
+}
+
+.top-menu {
+	line-height: 45px;
+	font-size: 16px;
+}
+
+
+/**
+ * 组件
+ */
+.newui-table {
+	border-collapse: collapse;
+	width: 100%;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+tr {
+	white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+	background: rgba(230,239,250,1.00);
+	background: #F5F5F5;
+}
+
+thead th, tbody td {
+	padding: 1px 5px;
+	border-right: 1px solid #ccc;
+}
+
+thead th {
+	text-align: left;
+	background: rgba(238,238,238,1.00);
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+}
+
+thead th a {
+	display: block;
+	min-width: 14px;
+}
+
+thead th i {
+	display: block;
+	float: right;
+}
+
+.newui-tr-selected td {
+	background: rgba(56,121,217,1.00);
+	background: #DDEEFF;
+}
+
+tr:hover td {
+	background: #EBF2FC;
+}
+
+tfoot a {
+	display: block;
+	text-align: center;
+}
+
+.newui-toolbar {
+	padding: 10px;
+}
+
+/**
+ * 对话框
+ */
+dialog, .dialog {
+	display: block;
+    z-index: 99;
+    top: 100px;
+	margin: 0 auto;
+	padding: 10px;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
+	/*max-width: 100px;*/
+	background: #fff;
+	border: 1px solid #000;
+}
+
+.dialog-title {
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.dialog-title h4 {
+}
+
+.dialog-title i {
+	float: right;
+}
+
+
+/**
+ * 预览
+ */
+footer {
+	display: block;
+	overflow: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 82px;
+	right: 0;
+    bottom: 0;
+    max-height: 100%;
+	width: 320px;
+	background: rgba(255,255,255,0.75);
+	border-left: 1px solid #ccc;
+ }
+ 
+.filter-toolbar {
+	position: fixed;
+	bottom: 0;
+	height: auto;
+	background: rgba(238,238,238,1.00);
+	border-top: 1px solid #ccc;
+	width: 100%;
+	padding: 4px 0;
+ }
+ 
+ .filter-toolbar button {
+	display: inline-block;
+	float: left;
+	box-sizing: content-box;
+	height: 22px;
+	line-height: 22px;
+	font-size: 13px;
+	border: 1px solid rgb(169, 169, 169);
+	padding: 0 10px;
+	background-color: buttonface;
+	margin: 0 3px;
+ }
+ 
+.filter-toolbar input, .filter-toolbar select {
+	display: inline-block;
+	float: left;
+	box-sizing: content-box;
+	height: 22px;
+	line-height: 22px;
+	font-size: 13px;
+	border: 1px solid rgb(169, 169, 169);
+	padding: 0 0 0 2px;
+	margin: 0 3px;
+ }
+ 
+ .filter-toolbar i {
+	display: inline-block;
+	float: left;
+	line-height: 24px;
+	font-size: 13px;
+ }
+ 
+.dashboard {
+	padding: 10px;
+}
+ 
+.dashboard ol {
+	border: 1px solid #ccc;
+	overflow: hidden;
+	float: left;
+	margin: 0 0 30px 0;
+	clear: left;
+}
+
+.dashboard dt {
+	width: 80px;
+	float: left;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.dashboard dd {
+}
+
+.dashboard dl {
+	float: left;
+}
+
+.dashboard li {
+	float: left;
+	min-width: 80px;
+	padding: 10px;
+}
