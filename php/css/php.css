@@ -1,0 +1,177 @@
+body {
+	background: #eee;
+	margin: 0;
+}
+
+h1 {	
+	margin: 0;
+	background: #fff;
+	text-align: center;
+	line-height: 44px;
+	font-size: 16px;
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+}
+
+h4 {
+	margin: 0;
+	padding: 0 0 0 20px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #333;
+	background: #eee;
+	font-weight: normal;
+}
+
+h5 {
+	background: #eee;
+	color: #333;
+	margin: 0;
+	padding: 10px 0 0 20px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 28px;
+}
+
+
+
+ol {
+	background: #fff;
+	margin: 0;
+	padding: 0 0 0 20px;
+	list-style: none;
+	line-height: 36px;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+li {
+	clear: left;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+
+li:last-child {
+	border-bottom: none;
+}
+
+.param {
+	padding: 0;
+}
+
+.param h5 {
+
+}
+
+.param li {
+	margin: 0 0 0 20px;
+}
+
+a {
+	/*color: #000;*/
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	font-size: 16px;
+	line-height: 44px;
+	background: #fff;
+	font-weight: normal;
+}
+
+form {
+	
+}
+
+.search {
+	padding: 8px;
+	border-bottom: 1px solid #ccc;
+}
+
+.search div {
+	border: 1px solid #ccc;
+	padding: 0 0 0 5px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.search input {
+	display: block;
+	text-align: center;
+	width: 100%;
+	border: none;
+	padding: 0;
+	font-size: 14px;
+	line-height: 24px;
+	border-radius: 5px;
+}
+
+.search input:focus {
+	text-align: left;
+}
+
+.function {
+	padding: 10px 0 0 0;
+	
+}
+
+.function div {
+	padding: 8px;
+}
+
+.function label {
+	float: left;
+	width: 30%;
+	font-weight: bold;
+}
+
+.function span {
+	display: block;
+	width: 70%;
+	overflow: hidden;
+}
+
+.function input, .function select {
+	display: block;
+	float: left;
+	width: 100%;
+	border: none;
+	padding: 0;
+	font-size: 14px;
+	line-height: 36px;
+	height: 36px;
+}
+
+.function select {
+	float: right;
+	width: auto;
+}
+
+.function button {
+	display: block;
+	text-align: center;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 0;
+	font-size: 16px;
+	line-height: 32px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+blockquote {
+	margin: 0;
+	padding: 10px;
+	border-top: 1px solid #ccc;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	height: 320px;
+	border: none;
+	padding: 0;
+}
